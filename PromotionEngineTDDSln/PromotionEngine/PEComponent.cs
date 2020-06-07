@@ -19,11 +19,11 @@ namespace PromotionEngine
 
             double finalPriceOfProdA = (CountOfProdA / 3) * 130 + (CountOfProdA % 3 * ProductPrice.PriceOfProdA);
             double finalPriceOfProdB = (CountOfProdB / 2) * 45 + (CountOfProdB % 2 * ProductPrice.PriceOfProdB);
-            double finalPriceOfProdC = CountOfProdC * ProductPrice.PriceOfProdC;
-            double finalPriceOfProdD = CountOfProdD * ProductPrice.PriceOfProdD;
+            double finalPriceOfProdC = CountOfProdD > 0 ? (CountOfProdC / 1) * 0 + (CountOfProdC % 1 * ProductPrice.PriceOfProdC) : (CountOfProdC * ProductPrice.PriceOfProdC);
+            double finalPriceOfProdD = CountOfProdC > 0 ? (CountOfProdD / 1) * 30 + (CountOfProdD % 1 * ProductPrice.PriceOfProdD) : (CountOfProdD * ProductPrice.PriceOfProdD);
 
 
-            return finalPriceOfProdA + finalPriceOfProdB + finalPriceOfProdC;
+            return finalPriceOfProdA + finalPriceOfProdB + finalPriceOfProdC + finalPriceOfProdD;
         }
 
     }
