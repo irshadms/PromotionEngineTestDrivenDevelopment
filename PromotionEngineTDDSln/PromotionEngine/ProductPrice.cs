@@ -8,6 +8,7 @@ namespace PromotionEngine
 {
     class ProductPrice
     {
+        // All prices are constants, scope to add more products.
         public const double PriceOfProdA = 50;
         public const double PriceOfProdB = 30;
         public const double PriceOfProdC = 20;

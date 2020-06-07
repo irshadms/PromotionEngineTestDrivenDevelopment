@@ -8,6 +8,11 @@ namespace PromotionEngine
 {
     public class PEComponent
     {
+        /// <summary>
+        /// Get the total of all the productions in basket, by applying the promotions
+        /// </summary>
+        /// <param name="ListOfProducts"></param>
+        /// <returns></returns>
         public double GetTotal(List<string> ListOfProducts)
         {
             var frequencyOfProductsInBasket = ListOfProducts.GroupBy(x => x).ToDictionary(x => x.Key, x => x.Count());
