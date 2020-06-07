@@ -17,9 +17,9 @@ namespace PromotionEngine
             frequencyOfProductsInBasket.TryGetValue("C", out int CountOfProdC);
             frequencyOfProductsInBasket.TryGetValue("D", out int CountOfProdD);
 
-            double finalPriceOfProdA = (CountOfProdA / 3) * 130 + (CountOfProdA % 3 * 50);
-            double finalPriceOfProdB = (CountOfProdB / 2) * 45 + (CountOfProdB % 2 * 30);
-            double finalPriceOfProdC = CountOfProdC * 20;
+            double finalPriceOfProdA = (CountOfProdA / 3) * 130 + (CountOfProdA % 3 * ProductPrice.PriceOfProdA);
+            double finalPriceOfProdB = (CountOfProdB / 2) * 45 + (CountOfProdB % 2 * ProductPrice.PriceOfProdB);
+            double finalPriceOfProdC = CountOfProdC * ProductPrice.PriceOfProdC;
 
 
 
