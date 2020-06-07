@@ -11,6 +11,7 @@ namespace PromotionEngineUnitTest
         public void TestScenarioA()
         {
             PEComponent objScenarioA = new PEComponent();
+
             List<string> LstScenarioA = new List<string>();
             LstScenarioA.Add("A");
             LstScenarioA.Add("B");
