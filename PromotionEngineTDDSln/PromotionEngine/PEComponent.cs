@@ -8,5 +8,11 @@ namespace PromotionEngine
 {
     public class PEComponent
     {
+        public double GetTotal(List<string> ListOfProducts)
+        {
+
+            return 0;
+        }
+
     }
 }
