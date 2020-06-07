@@ -20,7 +20,7 @@ namespace PromotionEngine
             double finalPriceOfProdA = (CountOfProdA / 3) * 130 + (CountOfProdA % 3 * ProductPrice.PriceOfProdA);
             double finalPriceOfProdB = (CountOfProdB / 2) * 45 + (CountOfProdB % 2 * ProductPrice.PriceOfProdB);
             double finalPriceOfProdC = CountOfProdC * ProductPrice.PriceOfProdC;
-
+            double finalPriceOfProdD = CountOfProdD * ProductPrice.PriceOfProdD;
 
 
             return finalPriceOfProdA + finalPriceOfProdB + finalPriceOfProdC;
