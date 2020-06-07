@@ -17,7 +17,7 @@ namespace PromotionEngineUnitTest
             LstScenarioA.Add("C");
 
             double result = objScenarioA.GetTotal(LstScenarioA);
-            Assert.AreEqual(100, LstScenarioA);
+            Assert.AreEqual(100, result);
 
         }
     }
