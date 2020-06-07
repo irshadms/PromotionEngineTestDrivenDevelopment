@@ -21,5 +21,31 @@ namespace PromotionEngineUnitTest
             Assert.AreEqual(100, result);
 
         }
+
+        [TestMethod]
+        public void TestScenarioB()
+        {
+            PEComponent objScenarioB = new PEComponent();
+
+            List<string> LstScenarioB = new List<string>();
+            // 5As, 5Bs and 1C
+            LstScenarioB.Add("A");
+            LstScenarioB.Add("A");
+            LstScenarioB.Add("A");
+            LstScenarioB.Add("A");
+            LstScenarioB.Add("A");
+
+            LstScenarioB.Add("B");
+            LstScenarioB.Add("B");
+            LstScenarioB.Add("B");
+            LstScenarioB.Add("B");
+            LstScenarioB.Add("B");
+
+            LstScenarioB.Add("C");
+
+            double result = objScenarioB.GetTotal(LstScenarioB);
+            Assert.AreEqual(370, result);
+
+        }
     }
 }
